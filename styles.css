@@ -13,6 +13,7 @@ body {
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 5.625rem;
+    color: #FFF;
     margin-top: 0;
 }
 ul {
@@ -197,6 +198,8 @@ ul {
     font-size: 1.5rem;
 }
 .footer__content-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
     color: #A59678;
 }
 .footer__content-text,
@@ -210,8 +213,58 @@ ul {
     padding: 0 3rem;
 }
 .footer__list {
-    padding-bottom: 5em;
+    padding-bottom: 1em;
 }
 .footer__item {
     padding-bottom: 1.5rem;
+}
+
+/* Media query for above 700px */
+@media (min-width: 700px) {
+    /* tablet nav styles */
+    .container {
+        margin: 0 auto;
+    }
+    .row {
+        background-color: #3B4050;
+    }
+    .nav {
+        background-color: #2E323F;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 2em 3em 2em 3em;
+        overflow: hidden;
+    }
+    .nav__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* tablet hero styles */
+    .hero {
+        padding: 3em;
+        min-height: 60vh;
+    }
+    /* table large--primary styles */
+    .large__img {
+        max-width: 100%;
+        width: 800px;
+    }
+    /* tablet large--secondary styles */
+    .large__item--secondary {
+        display: flex;
+        gap: 1.5em;
+        margin: 3em 0;
+    }
+    .large__item--secondary-title {
+        padding: .25em .5em .5em .25em;
+        margin-top: 0;
+    }
+    .large__item--secondary-text {
+        padding: .5em .75em;
+    }
 }
